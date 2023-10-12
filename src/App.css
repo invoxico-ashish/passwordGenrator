@@ -2,16 +2,13 @@
   padding: 0%;
   margin: 0;
 }
-
 .main {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: end;
   justify-content: center;
-  /* border: 1px solid black; */
 }
-
 .btnSec {
   border: 1px solid whitesmoke;
   width: calc(100% - 35%);
@@ -25,7 +22,6 @@
 }
 
 .inner {
-  /* border: 1px solid red; */
   width: calc(100% - 40%);
   height: 50px;
   display: flex;
@@ -39,7 +35,6 @@
   border-radius: 20px;
   border: none;
 }
-
 .genrator {
   width: 50%;
   height: 40vh;
@@ -48,7 +43,15 @@
   align-items: center;
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgba(255, 255, 255, 0.95);
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .genrator {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  
+  }
 }
 
 .mainGen {
@@ -57,15 +60,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: hsla(236, 100%, 8%, 1);
-
+  /* background: hsla(236, 100%, 8%, 1);
   background: radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 64%);
-  
   background: -moz-radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 64%);
-  
   background: -webkit-radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 64%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 ); */
+
+  background-image: url('https://41.media.tumblr.com/efd15be8d41b12a7b0ef17fba27c3e20/tumblr_mqqy59HMaf1qzattso1_1280.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .top {
